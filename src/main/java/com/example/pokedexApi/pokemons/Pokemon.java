@@ -5,14 +5,14 @@ import java.util.List;
 public class Pokemon {
     private int pokedex;
     private String nome;
-    private int vida;
-    private int defesa;
-    private int spcDefesa;
-    private int ataque;
-    private int spcAtaque;
+    private int hp;
+    private int defense;
+    private int spDef;
+    private int attack;
+    private int spAtk;
     private int speed;
-    private List<Ataque> ataques;
-    private List<Habilidade> habilidades;
+    private List<Move> moves;
+    private List<Abilities> abilities;
 
     public Pokemon() {
     }
@@ -33,44 +33,44 @@ public class Pokemon {
         this.nome = nome;
     }
 
-    public int getVida() {
-        return vida;
+    public int getHp() {
+        return hp;
     }
 
-    public void setVida(int vida) {
-        this.vida = vida;
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
-    public int getDefesa() {
-        return defesa;
+    public int getDefense() {
+        return defense;
     }
 
-    public void setDefesa(int defesa) {
-        this.defesa = defesa;
+    public void setDefense(int defense) {
+        this.defense = defense;
     }
 
-    public int getSpcDefesa() {
-        return spcDefesa;
+    public int getSpDef() {
+        return spDef;
     }
 
-    public void setSpcDefesa(int spcDefesa) {
-        this.spcDefesa = spcDefesa;
+    public void setSpDef(int spDef) {
+        this.spDef = spDef;
     }
 
-    public int getAtaque() {
-        return ataque;
+    public int getAttack() {
+        return attack;
     }
 
-    public void setAtaque(int ataque) {
-        this.ataque = ataque;
+    public void setAttack(int attack) {
+        this.attack = attack;
     }
 
-    public int getSpcAtaque() {
-        return spcAtaque;
+    public int getSpAtk() {
+        return spAtk;
     }
 
-    public void setSpcAtaque(int spcAtaque) {
-        this.spcAtaque = spcAtaque;
+    public void setSpAtk(int spAtk) {
+        this.spAtk = spAtk;
     }
 
     public int getSpeed() {
@@ -81,19 +81,19 @@ public class Pokemon {
         this.speed = speed;
     }
 
-    public List<Ataque> getAtaques() {
-        return ataques;
+    public List<Ataque> getMoves() {
+        return moves;
     }
 
-    public void setAtaques(List<Ataque> ataques) {
-        this.ataques = ataques;
+    public void setMoves(List<Ataque> moves) {
+        this.moves = moves;
     }
 
-    public List<Habilidade> getHabilidades() {
-        return habilidades;
+    public List<Habilidade> getAbilities() {
+        return abilities;
     }
 
-    public void setHabilidades(List<Habilidade> habilidades) {
-        this.habilidades = habilidades;
+    public void setAbilities(List<Habilidade> abilities) {
+        this.abilities = abilities;
     }
 }
