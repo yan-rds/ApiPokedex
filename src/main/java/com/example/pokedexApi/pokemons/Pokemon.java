@@ -1,5 +1,7 @@
 package com.example.pokedexApi.pokemons;
 
+import com.example.pokedexApi.moves.Move;
+
 import java.util.List;
 
 public class Pokemon {
