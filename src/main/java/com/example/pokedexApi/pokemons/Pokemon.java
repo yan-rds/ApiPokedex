@@ -1,6 +1,7 @@
 package com.example.pokedexApi.pokemons;
 
 import com.example.pokedexApi.abilities.Ability;
+import com.example.pokedexApi.enuns.Tipo;
 import com.example.pokedexApi.moves.Move;
 
 import java.util.List;
@@ -8,6 +9,8 @@ import java.util.List;
 public class Pokemon {
     private int pokedex;
     private String nome;
+    private Tipo tipoUm;
+    private Tipo tipoDois;
     private int hp;
     private int defense;
     private int spDef;
@@ -34,6 +37,22 @@ public class Pokemon {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Tipo getTipoUm() {
+        return tipoUm;
+    }
+
+    public void setTipoUm(Tipo tipoUm) {
+        this.tipoUm = tipoUm;
+    }
+
+    public Tipo getTipoDois() {
+        return tipoDois;
+    }
+
+    public void setTipoDois(Tipo tipoDois) {
+        this.tipoDois = tipoDois;
     }
 
     public int getHp() {
