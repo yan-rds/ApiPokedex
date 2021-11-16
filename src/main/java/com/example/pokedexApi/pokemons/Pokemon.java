@@ -1,5 +1,6 @@
 package com.example.pokedexApi.pokemons;
 
+import com.example.pokedexApi.abilities.Ability;
 import com.example.pokedexApi.moves.Move;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public class Pokemon {
     private int spAtk;
     private int speed;
     private List<Move> moves;
-    private List<Abilities> abilities;
+    private List<Ability> abilities;
 
     public Pokemon() {
     }
@@ -83,19 +84,19 @@ public class Pokemon {
         this.speed = speed;
     }
 
-    public List<Ataque> getMoves() {
+    public List<Move> getMoves() {
         return moves;
     }
 
-    public void setMoves(List<Ataque> moves) {
+    public void setMoves(List<Move> moves) {
         this.moves = moves;
     }
 
-    public List<Habilidade> getAbilities() {
+    public List<Ability> getAbilities() {
         return abilities;
     }
 
-    public void setAbilities(List<Habilidade> abilities) {
+    public void setAbilities(List<Ability> abilities) {
         this.abilities = abilities;
     }
 }
