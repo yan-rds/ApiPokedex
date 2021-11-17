@@ -14,7 +14,9 @@ public class Pokemon {
     @Id
     private int pokedex;
     private String nome;
+    @Enumerated(EnumType.STRING)
     private Tipo tipoUm;
+    @Enumerated(EnumType.STRING)
     private Tipo tipoDois;
     private int hp;
     private int defense;
@@ -22,9 +24,9 @@ public class Pokemon {
     private int attack;
     private int spAtk;
     private int speed;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Move> moves;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Ability> abilities;
 
     public Pokemon() {
