@@ -9,8 +9,7 @@ public class PokemonService {
     @Autowired
     PokemonRepository repository;
 
-    public Pokemon salvarPokemon (Pokemon pokemon){
+    public void salvarPokemon (Pokemon pokemon){
         repository.save(pokemon);
-        return pokemon;
     }
 }
