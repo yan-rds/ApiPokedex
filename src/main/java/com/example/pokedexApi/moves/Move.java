@@ -1,22 +1,32 @@
 package com.example.pokedexApi.moves;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.example.pokedexApi.enuns.Tipo;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Move")
 public class Move {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String nome;
     private int level;
-    private String tipo;
+    private Tipo tipo;
     private String damageCategory;
     private int power;
     private String accuracy;
     private String pp;
 
     public Move() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -35,11 +45,11 @@ public class Move {
         this.level = level;
     }
 
-    public String getTipo() {
+    public Tipo getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(Tipo tipo) {
         this.tipo = tipo;
     }
 
