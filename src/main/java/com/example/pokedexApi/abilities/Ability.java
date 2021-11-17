@@ -1,9 +1,25 @@
 package com.example.pokedexApi.abilities;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Ability")
 public class Ability {
-    String nome;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String nome;
 
     public Ability() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
