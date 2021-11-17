@@ -4,9 +4,14 @@ import com.example.pokedexApi.abilities.Ability;
 import com.example.pokedexApi.enuns.Tipo;
 import com.example.pokedexApi.moves.Move;
 
+import javax.persistence.*;
 import java.util.List;
 
+
+@Entity
+@Table(name = "Pokemon")
 public class Pokemon {
+    @Id
     private int pokedex;
     private String nome;
     private Tipo tipoUm;
@@ -17,7 +22,9 @@ public class Pokemon {
     private int attack;
     private int spAtk;
     private int speed;
+    @ManyToMany
     private List<Move> moves;
+    @ManyToMany
     private List<Ability> abilities;
 
     public Pokemon() {
