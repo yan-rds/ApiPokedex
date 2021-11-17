@@ -1,6 +1,13 @@
 package com.example.pokedexApi.moves;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Move")
 public class Move {
+    @Id
     private String nome;
     private int level;
     private String tipo;
