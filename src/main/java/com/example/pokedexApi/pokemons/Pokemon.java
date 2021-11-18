@@ -24,9 +24,9 @@ public class Pokemon {
     private int attack;
     private int spAtk;
     private int speed;
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Move> moves;
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Ability> abilities;
 
     public Pokemon() {
