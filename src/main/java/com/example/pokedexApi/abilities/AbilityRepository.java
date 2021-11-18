@@ -1,4 +1,6 @@
 package com.example.pokedexApi.abilities;
 
-public class AbilityRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface AbilityRepository extends CrudRepository <Ability, String> {
 }
