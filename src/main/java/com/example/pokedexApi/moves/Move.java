@@ -1,5 +1,6 @@
 package com.example.pokedexApi.moves;
 
+import com.example.pokedexApi.enuns.DamageCategory;
 import com.example.pokedexApi.enuns.Tipo;
 
 import javax.persistence.*;
@@ -13,7 +14,7 @@ public class Move {
     private String nome;
     private int level;
     private Tipo tipo;
-    private String damageCategory;
+    private DamageCategory damageCategory;
     private int power;
     private String accuracy;
     private String pp;
@@ -53,11 +54,11 @@ public class Move {
         this.tipo = tipo;
     }
 
-    public String getDamageCategory() {
+    public DamageCategory getDamageCategory() {
         return damageCategory;
     }
 
-    public void setDamageCategory(String damageCategory) {
+    public void setDamageCategory(DamageCategory damageCategory) {
         this.damageCategory = damageCategory;
     }
 
