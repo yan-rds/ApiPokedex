@@ -9,8 +9,6 @@ import javax.persistence.*;
 @Table(name = "Move")
 public class Move {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
     private String nome;
     private int level;
     private Tipo tipo;
@@ -22,13 +20,6 @@ public class Move {
     public Move() {
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
