@@ -14,8 +14,8 @@ public class Move {
     private Tipo tipo;
     private DamageCategory damageCategory;
     private int power;
-    private String accuracy;
-    private String pp;
+    private int accuracy;
+    private int pp;
 
     public Move() {
     }
@@ -61,19 +61,19 @@ public class Move {
         this.power = power;
     }
 
-    public String getAccuracy() {
+    public int getAccuracy() {
         return accuracy;
     }
 
-    public void setAccuracy(String accuracy) {
+    public void setAccuracy(int accuracy) {
         this.accuracy = accuracy;
     }
 
-    public String getPp() {
+    public int getPp() {
         return pp;
     }
 
-    public void setPp(String pp) {
+    public void setPp(int pp) {
         this.pp = pp;
     }
 }
