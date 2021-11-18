@@ -7,8 +7,6 @@ import javax.persistence.*;
 public class Ability {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
     private String nome;
 
     public Ability() {
@@ -23,11 +21,4 @@ public class Ability {
         this.nome = nome;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 }
