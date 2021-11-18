@@ -9,4 +9,8 @@ public class AbilityService {
     @Autowired
     AbilityRepository abilityRepository;
 
+    public void salvarAbility (Ability ability){
+        abilityRepository.save(ability);
+    }
+
 }
