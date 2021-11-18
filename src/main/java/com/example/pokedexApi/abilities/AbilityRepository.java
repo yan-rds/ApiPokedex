@@ -1,2 +1,4 @@
-package com.example.pokedexApi.abilities;public class AbilityRepository {
+package com.example.pokedexApi.abilities;
+
+public class AbilityRepository {
 }
